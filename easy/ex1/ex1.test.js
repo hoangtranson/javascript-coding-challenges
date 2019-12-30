@@ -1,6 +1,6 @@
 const lessThan100 = require('./ex1');
 
-describe('lessThan100 function', () => {
+describe('LESS THAN 100', () => {
 
     test('throw error when non-numberic input', () => {
         let result;
@@ -18,6 +18,4 @@ describe('lessThan100 function', () => {
     test('return false in case 83 + 34', () => {
         expect(lessThan100(83, 34)).toBe(false);
     });
-
-
 })
