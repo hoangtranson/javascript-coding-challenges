@@ -12,7 +12,11 @@
 */
 
 const lessThan100 = (a, b) => {
-  // your code here
+  // your code here 
+  if(isNaN(a) || isNaN(b)) {
+    throw new Error('invalid parameter');
+  }
+  return (a + b) < 100;
 }
 
 module.exports = lessThan100;
