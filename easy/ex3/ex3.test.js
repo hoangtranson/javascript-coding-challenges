@@ -3,12 +3,7 @@ const addition = require('./ex3');
 describe('Sum of Two Numbers', () => {
 
     test('throw error when non-numberic input', () => {
-        let result;
-        try {
-            result = addition('a', 34);
-        } catch (error) {
-            expect(error.message).toBe('invalid parameter');
-        }
+        expect(() => addition('a', 34)).toThrowError('invalid parameter');
     });
 
     test('return 5 when 3 + 2', () => {
